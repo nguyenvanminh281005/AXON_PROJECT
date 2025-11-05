@@ -161,7 +161,7 @@ export const ApprovalActions: React.FC<ApprovalActionsProps> = ({
       <button
         onClick={handleForward}
         disabled={processing}
-        className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+        className="flex-1 px-4 py-2 bg-[#48B7D6] text-white rounded-lg hover:bg-[#3797b2] transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
       >
         {processing ? (
           <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
