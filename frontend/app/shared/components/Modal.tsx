@@ -65,12 +65,15 @@ export class BaseModal extends React.Component<IModalProps> {
 
     return (
       <div 
-        className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/30 backdrop-blur-sm"
+        className="fixed inset-0 z-50 flex items-center justify-center p-4 py-10 bg-black/30 backdrop-blur-sm"
         onClick={this.handleBackdropClick}
       >
-        <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full ${this.getMaxWidthClass()} transform transition-all`}>
+        <div
+          className={`bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-xl w-full sm:w-auto ${this.getMaxWidthClass()} transform transition-all flex flex-col`}
+          style={{ width: '100%', maxWidth: '36rem', maxHeight: '90vh' }}
+        >
           {/* Modal Header */}
-          <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+          <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700 flex-shrink-0">
             <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
               {title}
             </h2>
@@ -84,8 +87,8 @@ export class BaseModal extends React.Component<IModalProps> {
             </button>
           </div>
 
-          {/* Modal Content */}
-          <div className="p-6">
+          {/* Modal Content chỉ nội dung này cuộn */}
+          <div className="flex-1 overflow-y-auto p-6">
             {children}
           </div>
         </div>

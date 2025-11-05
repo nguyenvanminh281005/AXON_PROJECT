@@ -129,7 +129,7 @@ export const RequestDetailModal: React.FC<RequestDetailModalProps> = ({
                 {request.amount && (
                   <div>
                     <p className="text-xs text-gray-500">Số tiền</p>
-                    <p className="text-lg font-bold text-blue-600">
+                    <p className="text-lg font-bold text-[#48B7D6]">
                       {request.getFormattedAmount()}
                     </p>
                   </div>
@@ -172,7 +172,7 @@ export const RequestDetailModal: React.FC<RequestDetailModalProps> = ({
                       </div>
                       <button
                         onClick={() => handleDownloadFile(file)}
-                        className="ml-4 text-blue-600 hover:text-blue-800 text-sm font-medium"
+                        className="ml-4 text-[#48B7D6] hover:text-[#3797b2] text-sm font-medium"
                       >
                         Tải xuống
                       </button>
@@ -221,7 +221,7 @@ const StatusBadge: React.FC<{ status: string }> = ({ status }) => {
       case 'REJECTED':
         return 'bg-red-100 text-red-800';
       case 'FORWARDED':
-        return 'bg-blue-100 text-blue-800';
+        return 'bg-[#B7E9F6] text-[#3797b2]';
       default:
         return 'bg-gray-100 text-gray-800';
     }

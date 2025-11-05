@@ -51,38 +51,38 @@ export class ColorPalette {
  * Light Theme Colors
  */
 export const lightTheme = new ColorPalette(
-  'blue-600',
-  'blue-700',
-  'blue-50',
+  '#42A7C3', // primary
+  '#328fa5', // primaryHover (darker shade)
+  '#B7E9F6', // primaryLight (background nhạt)
   'white',
-  'gray-50',
+  '#B7E9F6', // background chính dùng màu phụ nhạt
   'white',
   'gray-900',
   'gray-600',
-  'gray-200',
+  '#B7E9F6', // border (chuyển luôn nếu là border nhẹ)
   'green-600',
   'yellow-500',
   'red-600',
-  'blue-500'
+  '#42A7C3' // info
 );
 
 /**
  * Dark Theme Colors (for future implementation)
  */
 export const darkTheme = new ColorPalette(
-  'blue-500',
-  'blue-600',
-  'blue-900',
+  '#42A7C3', // primary
+  '#328fa5', // primaryHover
+  '#164854', // primaryLight dark
   'gray-800',
   'gray-900',
   'gray-800',
   'white',
   'gray-300',
-  'gray-700',
+  '#164854', // border
   'green-500',
   'yellow-400',
   'red-500',
-  'blue-400'
+  '#42A7C3' // info
 );
 
 /**
@@ -105,7 +105,7 @@ export const themeConfig = {
   components: {
     // Buttons
     button: {
-      primary: 'bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-5 rounded-lg transition-colors shadow-sm hover:shadow disabled:opacity-50 disabled:cursor-not-allowed',
+      primary: 'bg-[#48B7D6] hover:bg-blue-700 text-white font-medium py-2.5 px-5 rounded-lg transition-colors shadow-sm hover:shadow disabled:opacity-50 disabled:cursor-not-allowed',
       secondary: 'bg-white hover:bg-gray-50 text-gray-700 font-medium py-2.5 px-5 rounded-lg transition-colors border border-gray-300 shadow-sm hover:shadow',
       danger: 'bg-red-600 hover:bg-red-700 text-white font-medium py-2.5 px-5 rounded-lg transition-colors shadow-sm hover:shadow disabled:opacity-50',
       success: 'bg-green-600 hover:bg-green-700 text-white font-medium py-2.5 px-5 rounded-lg transition-colors shadow-sm hover:shadow',

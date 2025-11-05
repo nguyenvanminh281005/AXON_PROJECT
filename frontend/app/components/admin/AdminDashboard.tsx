@@ -106,7 +106,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ currentUser }) =
         <button
           onClick={refresh}
           disabled={loading}
-          className="p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 shadow-sm hover:shadow"
+          className="p-2 bg-[#48B7D6] text-white rounded-lg hover:bg-[#3797b2] transition-colors disabled:opacity-50 shadow-sm hover:shadow"
           title="Làm mới"
         >
           <svg

@@ -18,9 +18,9 @@ export class ButtonComponent extends React.Component<IButtonProps> {
     const { variant = 'primary' } = this.props;
     
     const styles = {
-      primary: 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl',
+      primary: 'bg-[#42A7C3] hover:bg-[#328fa5] text-white shadow-lg hover:shadow-xl',
       secondary: 'bg-gray-600 hover:bg-gray-700 text-white shadow-lg hover:shadow-xl',
-      outline: 'bg-white hover:bg-gray-50 text-blue-600 border-2 border-blue-600 hover:border-blue-700'
+      outline: 'bg-[#B7E9F6] hover:bg-[#42A7C3] text-[#42A7C3] border-2 border-[#42A7C3] hover:text-white hover:border-[#328fa5]'
     };
     
     return styles[variant];
@@ -53,7 +53,7 @@ export class ButtonComponent extends React.Component<IButtonProps> {
       type = 'button' 
     } = this.props;
 
-    const baseStyles = 'font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2';
+    const baseStyles = 'font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#42A7C3] focus:ring-offset-2';
     const variantStyles = this.getVariantStyles();
     const sizeStyles = this.getSizeStyles();
     const disabledStyles = disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer';

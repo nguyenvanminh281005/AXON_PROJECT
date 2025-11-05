@@ -22,7 +22,7 @@ export const RequestList: React.FC<RequestListProps> = ({
   if (loading) {
     return (
       <div className="flex justify-center items-center py-12">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#48B7D6]"></div>
       </div>
     );
   }
@@ -65,7 +65,7 @@ export const RequestList: React.FC<RequestListProps> = ({
               <div className="px-4 py-4 sm:px-6">
                 <div className="flex items-center justify-between">
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-blue-600 truncate">
+                    <p className="text-sm font-medium text-[#48B7D6] truncate">
                       {request.title}
                     </p>
                     <p className="mt-1 text-sm text-gray-500 line-clamp-2">
@@ -132,7 +132,7 @@ const StatusBadge: React.FC<{ status: string }> = ({ status }) => {
       case 'REJECTED':
         return 'bg-red-100 text-red-800';
       case 'FORWARDED':
-        return 'bg-blue-100 text-blue-800';
+        return 'bg-[#B7E9F6] text-[#48B7D6]';
       default:
         return 'bg-gray-100 text-gray-800';
     }
