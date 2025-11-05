@@ -1,0 +1,138 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* LEFT SIDE */
+.login-left {
+  flex: 1.2;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.welcome-img {
+  width: 380px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* RIGHT SIDE */
+.login-right {
+  flex: 1.8;
+  background-color: #f7f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  width: 70%;
+  max-width: 380px;
+  text-align: center;
+}
+
+.greeting {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.welcome-text {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  text-align: left;
+  font-size: 14px;
+  color: #444;
+}
+
+.form input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.eye-btn {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.help-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #777;
+}
+
+.help-text {
+  cursor: default;
+}
+
+.forgot {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-btn {
+  background-color: #2b3a67;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #1d2951;
+}

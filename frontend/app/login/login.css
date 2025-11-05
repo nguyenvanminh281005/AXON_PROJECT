@@ -1,0 +1,145 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* LEFT SIDE (Form) */
+.login-left {
+  flex: 1.4;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+}
+
+.login-box {
+  width: 85%;
+  max-width: 360px;
+  text-align: center;
+}
+
+
+.login-greeting {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.welcomeText{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  text-align: left;
+  font-size: 14px;
+  color: #444;
+}
+
+.form input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.eye-btn {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.help-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #777;
+}
+
+.help-text {
+  cursor: default;
+}
+
+.forgot {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-btn {
+  background-color: #2b3a67;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #1d2951;
+}
+
+/* Footer bottom-left */
+.footer {
+  position: absolute;
+  bottom: 15px;
+  left: 80px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* RIGHT SIDE (Image) */
+.login-right {
+  flex: 1.6;
+  background: linear-gradient(160deg, #c2e7ff, #e8f5ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  position: relative;
+}
+
+.welcome-img {
+  width: 420px;
+  height: auto;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 40px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
