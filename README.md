@@ -1,7 +1,4 @@
-            Next.js Expense Request (demo frontend)
-
-
-            Hướng dẫn:
+Hướng dẫn
 1. Giải nén
 2. cd vào thư mục project
 3. npm install
